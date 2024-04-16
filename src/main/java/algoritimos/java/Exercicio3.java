@@ -22,7 +22,6 @@ public class Exercicio3 {
   }
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
-      Exercicio3 pilha = new Exercicio3();
       int opcao;
       do{
       System.out.println("\nEscolha uma opção:");
@@ -40,16 +39,16 @@ public class Exercicio3 {
           System.out.println("Digite o novo elemento:");
           int iC = scanner.nextInt();
             if(iPos == 0) System.out.println("\nCapacidade máxima atingida!\n");
-            pilha.push(iC);
+            Exercicio3.push(iC);
             break;
           case 2:
             if(iPos == 9){System.out.println("\nNão há elementos para consultar\n");
             break;} 
-            System.out.println("\n" + pilha.top());
+            System.out.println("\n" + Exercicio3.top());
             break;
           case 3:
             if(pop() == 0) System.out.println("\nNão há elementos para retirar\n");
-            pilha.pop();
+            Exercicio3.pop();
             break;
           case 0:
             System.out.println("Saindo...");
