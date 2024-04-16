@@ -1,3 +1,4 @@
+package algoritimos.java;
 import java.util.Scanner;
 import java.util.Stack;
 
