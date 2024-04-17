@@ -47,15 +47,13 @@ public class Exercicio3 {
             System.out.println("\n" + Exercicio3.top());
             break;
           case 3:
-            if(pop() == 0) System.out.println("\nNão há elementos para retirar\n");
-            Exercicio3.pop();
+            if(Exercicio3.pop() == 0) System.out.println("\nNão há elementos para retirar\n");
             break;
           case 0:
             System.out.println("Saindo...");
             break;
           default:
             System.out.println("Opção inválida!");
-
             s.close();
       }
       } while(opcao != 0);
