@@ -7,13 +7,13 @@ public class Exercicio10 {
 		public static final int TAMANHO_MAXIMO = 10;
 		public static int[] fila = new int[TAMANHO_MAXIMO];
 		public static int tamanho = 0;
-		public static int inicio = 0;
-		public static int fim = 0;
+		public static int inicio = 9;
+		public static int fim = 9;
 
 		public static void inserirElemento(int elemento) {
 			if (tamanho < TAMANHO_MAXIMO) {
 				fila[fim] = elemento;
-				fim = (fim + 1) % TAMANHO_MAXIMO;
+				fim = (--fim) % TAMANHO_MAXIMO;
 				tamanho++;
 				System.out.println("Elemento inserido com sucesso!");
 			} else {
@@ -44,7 +44,6 @@ public class Exercicio10 {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		Fila fila = new Fila();
 		int opcao;
 
 		do {
@@ -59,7 +58,7 @@ public class Exercicio10 {
 			switch (opcao) {
 				case 1:
 					System.out.print("Digite o elemento a ser inserido na fila: ");
-					int elemento = scanner.next().intAt(0);
+					int elemento = scanner.nextInt();
 					Fila.inserirElemento(elemento);
 					break;
 				case 2:
