@@ -5,12 +5,12 @@ public class Exercicio17 {
   public static class FilaCircular {
     public static char[] fila = new char[10];
     public static int tamanho = 0;
-    public static int frente = 0;
-    public static int tras = -1;
+    public static int frente = 9;
+    public static int tras = 10;
 
     public static void inserirElemento(char elemento) {
       if (tamanho < fila.length) {
-        tras = (tras + 1) % fila.length;
+        tras = (tras - 1) % fila.length;
         fila[tras] = elemento;
         tamanho++;
         System.out.println("Elemento inserido com sucesso!");
@@ -31,7 +31,7 @@ public class Exercicio17 {
     public static void retirarElemento() {
       if (tamanho > 0) {
         System.out.println("Elemento retirado: " + fila[frente]);
-        frente = (frente + 1) % fila.length;
+        frente = (frente - 1) % fila.length;
         tamanho--;
       } else {
         System.out.println("Fila está vazia. Não é possível retirar elementos.");
