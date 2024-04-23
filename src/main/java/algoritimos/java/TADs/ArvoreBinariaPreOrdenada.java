@@ -25,6 +25,25 @@ public class ArvoreBinariaPreOrdenada {
     return raiz;
   }
 
+  public NoBinario buscar(int busca) {
+    return buscarRecursivamente(raiz, busca);
+  }
+
+  public NoBinario buscarRecursivamente(NoBinario no, int busca) {
+    if (no == null){
+      System.out.println(busca + " não encontrado na árvore.");
+      return raiz;
+    }
+    else if (no.valor == busca) {
+      System.out.println(busca + " encontrado na árvore.");
+      return raiz;
+    }
+    else if (busca < no.valor)
+      return buscarRecursivamente(no.esquerda, busca);
+    else
+      return buscarRecursivamente(no.direita, busca);
+  }
+
   public void preOrdem(NoBinario no) {
     if (no != null) {
       System.out.print(no.valor + " ");
