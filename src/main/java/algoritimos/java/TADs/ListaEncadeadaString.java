@@ -1,8 +1,8 @@
 package algoritimos.java.TADs;
 
 public class ListaEncadeadaString {
-  private No inicio;
-  private No fim;
+  private NoString inicio;
+  private NoString fim;
 
   public ListaEncadeadaString() {
     this.inicio = null;
@@ -10,7 +10,7 @@ public class ListaEncadeadaString {
   }
 
   public void inserir(String elemento) {
-    No novoNo = new No(elemento);
+    NoString novoNo = new NoString(elemento);
     if (inicio == null) {
       inicio = novoNo;
       fim = novoNo;
@@ -26,8 +26,8 @@ public class ListaEncadeadaString {
       System.out.println("A lista está vazia.");
       return;
     }
-    No anterior = null;
-    No atual = inicio;
+    NoString anterior = null;
+    NoString atual = inicio;
     while (atual.proximo != null) {
       anterior = atual;
       atual = atual.proximo;
@@ -47,7 +47,7 @@ public class ListaEncadeadaString {
       System.out.println("A lista está vazia.");
       return;
     }
-    No atual = inicio;
+    NoString atual = inicio;
     System.out.print("Lista: ");
     while (atual != null) {
       System.out.print(atual.elemento + " ");

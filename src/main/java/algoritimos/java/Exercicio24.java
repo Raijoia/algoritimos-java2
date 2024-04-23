@@ -1,11 +1,13 @@
 package algoritimos.java;
 import java.util.Scanner;
 
+import algoritimos.java.TADs.ListaEncadeadaString;
+
 
 public class Exercicio24 {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-    ListaEncadeada lista = new ListaEncadeada();
+    ListaEncadeadaString lista = new ListaEncadeadaString();
 
     while (true) {
       System.out.println("\nEscolha a operação:");
