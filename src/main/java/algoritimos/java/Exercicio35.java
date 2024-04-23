@@ -1,4 +1,6 @@
+package algoritimos.java;
 import java.util.Scanner;
+
 class No {
     int valor;
     No esquerda, direita;
