@@ -64,7 +64,7 @@ class Calculadora {
     }
 }
 
-public class OperacoesMatematicasTADs {
+public class Exercicio13 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Fila fila = new Fila(5);

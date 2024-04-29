@@ -2,7 +2,11 @@ import java.util.Scanner;
 
 // Classe FilaCircular para representar uma fila circular de números inteiros
 class Exercicio20 {
-    private int[] elementos;
+    public class Main {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+   
+            private int[] elementos;
     private int tamanho;
     private int capacidade;
     private int inicio;
@@ -68,7 +72,7 @@ class Calculadora {
     }
 }
 
-public class OperacoesMatematicasTADs {
+public class Exercicio20 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         FilaCircular fila = new FilaCircular(5);
